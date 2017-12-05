@@ -1,4 +1,4 @@
-# Simple Currency Converter
+# Simple PHP Currency Converter
 A light weight PHP class that can convert two currencies using exchangerate.guru API.
 
 Usage:
