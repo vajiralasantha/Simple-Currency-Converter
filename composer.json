@@ -12,7 +12,10 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^5.5.9 || ^7.0"
+        "php": "^5.5.9 || ^7.0",
+        "ext-dom": "*",
+        "ext-libxml": "*",
+        "ext-curl": "*"
     },
     "autoload": {
         "psr-4": {

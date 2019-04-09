@@ -5,20 +5,21 @@ Usage:
 
 Install via composer
 
-```"vajiral/simple-currency-converter": "1.0.0"```
+```"composer require vajiral/simple-currency-converter"```
 
 In your PHP file
 
 ```php
 <?php
 
+use BigV\CurrencyCodes;
 use BigV\CurrencyConverter;
 
 require __DIR__ . "/../vendor/autoload.php";
 
 $converter = new CurrencyConverter();
-$converter->setCurrencyFrom("USD");
-$converter->setCurrencyTo("LKR");
+$converter->setCurrencyFrom(CurrencyCodes::ISO_USD);
+$converter->setCurrencyTo(CurrencyCodes::ISO_LKR);
 $converter->setAmount(10);
 
 $result = $converter->convertCurrency();

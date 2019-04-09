@@ -30,8 +30,8 @@ class CurrencyConverter {
      * CursConverter constructor.
      */
     public function __construct() {
-        $this->currencyFrom = "USD";
-        $this->currencyTo = "LKR";
+        $this->currencyFrom = CurrencyCodes::ISO_USD;
+        $this->currencyTo = CurrencyCodes::ISO_LKR;
         $this->amount = 1;
     }
 
@@ -121,5 +121,3 @@ class CurrencyConverter {
         $this->amount = $amount;
     }
 }
-  
-?>
